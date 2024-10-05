@@ -1,1 +1,25 @@
+@import url("/node_modules/bootstrap-icons/font/bootstrap-icones.css");
 @import 'custom';
+
+html{
+  position: 100%;  
+}
+
+main{
+    margin-bottom: 250px;
+}
+
+footer.footer{
+    padding: 15px;
+    width: 100%;
+}
+
+p{
+    font-family: $font-family-sans-serif;
+    font-size: 18px;
+}
+
+#imageaccueil1 {
+    width: 100%;
+
+}
