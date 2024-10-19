@@ -5,9 +5,11 @@
 $primary: #73BE31;
 $secondary: #FFEAB5;
 $brown: #BC702D;
-$dark: #014421;
+$greendark:#014421 ;
 $font-family-sans-serif: "Montserrat", sans-serif !default;
 $font-family-sans-serif: "Hind Madurai", sans-serif !default;
+
+$enable-negative-margins:true;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
