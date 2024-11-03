@@ -52,3 +52,11 @@ text-justify{
         transition: all 0.3s;
     }
 }
+ .signin{
+    background-image: url(../images/FondHeroScene.png);
+    background-size: cover; /* Pour couvrir tout l'écran */
+    background-position: center; /* Pour centrer l'image */
+    background-repeat: no-repeat; /* Pour éviter que l'image se répète */
+    height: 100vh; /* Pour que le corps prenne toute la hauteur de la fenêtre */
+    margin: 0; /* Pour enlever les marges par défaut */
+}
