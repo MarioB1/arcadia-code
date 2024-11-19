@@ -117,7 +117,6 @@
           pour être au plus proche de leur écosystème naturel.
           </p>
 <div class="text-center">
-          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">Ajouter un habitat</button>
       </div>
           <br>
           <div class="row row-cols-1 row-cols-lg-3">
@@ -163,7 +162,7 @@
         <div class="container">
           <div class="text-center pt-4">
             <div class="position-relative">
-              <a href="#" class="btn text-secondary position-absolute d-flex align-items-center justify-content-center"
+              <div class="btn text-secondary position-absolute d-flex align-items-center justify-content-center"
                 style="background-color:#014421; left:-20px; right:-20px; height:70px;">
                 <h3 class="fw-bold align-middle">Quelques habitants</h3>
               </a>
@@ -238,7 +237,7 @@
         <div class="container">
           <div class="text-center pt-4">
             <div class="position-relative">
-              <a href="#" class="btn text-secondary position-absolute d-flex align-items-center justify-content-center"
+              <div class="btn text-secondary position-absolute d-flex align-items-center justify-content-center"
                 style="background-color:#014421; left:-20px; right:-20px; height:70px;">
                 <h3 class="fw-bold align-middle">Vos avis</h3>
               </a>
@@ -255,7 +254,7 @@
 
         <div class="container">
           <head>
-            <meta charset="UTF-8">
+          
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Page avec Scrollbar</title>
             <style>
@@ -269,7 +268,10 @@
         </head>
         <body>
           <div class="scroll-container">
-            
+            <div class="action-image-buttons" data-show="employe">
+
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAvisModal"><i class="bi bi-trash"></i></button>
+            </div>
               <div class="card my-2">
                 <div class="card-header d-flex">
                   <div class="stars card-title">
@@ -287,6 +289,8 @@
                   </p>
                 </div>
               </div>
+              <div class="action-image-buttons" data-show="employe">
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAvisModal"><i class="bi bi-trash"></i></button></div>
               <div class="card my-2">
                 <div class="card-header d-flex">
                   <div class="stars card-title">
@@ -303,6 +307,9 @@
                     <small class="text-muted">Posté par Ayoub le 02/08/2024</small>
                   </p>
                 </div>
+              </div>
+              <div class="action-image-buttons" data-show="employe">
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAvisModal"><i class="bi bi-trash"></i></button>
               </div>
               <div class="card my-2">
                 <div class="card-header d-flex">
@@ -322,7 +329,9 @@
                   </p>
                 </div>
               </div>
-              <div class="card my-2">
+              <div class="action-image-buttons" data-show="employe">
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAvisModal"><i class="bi bi-trash"></i></button>
+              </div><div class="card my-2">
                 <div class="card-header d-flex">
                   <div class="stars card-title">
                     <i class="bi bi-star-fill"></i>
@@ -338,6 +347,10 @@
                     <small class="text-muted">Posté par Paul le 10/05/2024</small>
                   </p>
                 </div>
+              </div>
+              <div class="action-image-buttons" data-show="employe">
+          
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteAvisModal"><i class="bi bi-trash"></i></button>
               </div>
               <div class="card my-2">
                 <div class="card-header d-flex">
@@ -359,18 +372,13 @@
             </div>
           </body>
             </div></div></section></section></section>
-            <!DOCTYPE html>
-<html lang="fr">
+           
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page avec Scrollbar</title>
-    <!-- Lien vers le CDN Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Lien vers le CSS de Bootstrap -->
     
     <style>
-        /* Style pour la barre de défilement */
         .scroll-container {
             width: 100%;       /* Utilise toute la largeur de la fenêtre */
             height: 500px;     /* Hauteur fixe pour la zone défilable */
@@ -389,28 +397,27 @@
 
 <br><br><br>
 <section>
-  <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horaires du Zoo</title>
-    <!-- Lien vers le fichier CSS si nécessaire -->
-    <link rel="stylesheet" href="style.css">
-</head>
+
 <body>
 
 <article class="article-bg">
-    <div class="white d-flex justify-content-center">
-        <h2 class="text-dark">Horaires</h2>
+    <div class="text-secondary text-center">
+        <h2>Horaires</h2>
     </div>
-
+    <div class="card" style="max-width: 500px; margin: auto;">
+      <div class="card-body">
     <div class="text-center">
-      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">Modifier les horaires</button>
-  </div>
+      <div class="action-image-buttons" data-show="admin">
+      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#EditionHorairesModal">Modifier les horaires</button>
+  </div></div>
     <div class="darker d-flex justify-content-center">
         <div class="table-responsive">
             <table class="table table-striped" aria-label="horaires du zoo">
+              <div class="action-image-buttons" data-show="admin">
+
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionHorairesModal"><i class="bi bi-pencil-square"></i></button>
+        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeleteHorairesModal"><i class="bi bi-trash"></i></button>
+              </div>
                 <br>
                 <tr>
                     <td>Lundi</td>
@@ -447,14 +454,93 @@
                     <td>09:00</td>
                     <td>18:00</td>
                 </tr>
+            
             </table>
-            <div class="action-image-buttons">
-              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
-              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
-          </div>
+            
         </div>
-    </div>
-</article>
+    </div></div></div></article>
 
 </body>
-</html>
+
+  <!-- Modal suppression-->
+  <div class="modal fade" id="DeleteAvisModal" tabindex="-1" aria-labelledby="DeleteAvisModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="DeleteAvislLabel">Etes-vous sur de vouloir supprimer cet avis</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"</button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <p>Titre</p>
+                
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-danger">Supprimer</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+
+            </div>
+        </form>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<!-- Modal edition-->
+<div class="modal fade" id="EditionHorairesModal" tabindex="-1" aria-labelledby="EditionHorairesModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="EditionHoraireslLabel">Edition Horaires</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>
+          <div class="mb-3">
+              <label for="NameServiceInput" class="form-label">Titre</label>
+              <input type="text" class="form-control" id="NameServiceInput"
+          </div>
+          <div class="mb-3">
+              <label for="Horaires" class="form-label">Image</label>
+              
+          </div>
+
+          <div class="text-center">
+              <button type="button" class="btn btn-secondary">Enregistrer</button>
+          </div>
+      </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal suppression-->
+<div class="modal fade" id="DeleteHorairesModal" tabindex="-1" aria-labelledby="DeleteHorairesModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="DeleteHorairesModalLabel">Etes-vous sur de vouloir supprimer ce service</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"</button>
+      </div>
+      <div class="modal-body">
+          <form>
+          <div class="mb-3">
+              <p>Titre</p>
+            
+          </div>
+          <div class="text-center">
+              <button type="button" class="btn btn-danger">Supprimer</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+
+          </div>
+      </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div></div>

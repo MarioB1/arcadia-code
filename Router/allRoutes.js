@@ -8,7 +8,13 @@ export const allRoutes = [
     new Route("/jungle", "Jungle", "/pages/jungle.html"),
     new Route("/marais", "Marais", "/pages/marais.html"),
     new Route("/savane", "Savane", "/pages/savane.html"),
-    new Route("/contact", "Contact", "/pages/contact.html"),
+    new Route("/lion", "Lion", "/pages/lion.html"),
+    new Route("/zebre", "Zebre", "/pages/zebre.html"),
+    new Route("/hippopotame", "Hippopotame", "/pages/hippopotame.html"),
+    new Route("/girafe", "Girafe", "/pages/girafe.html"),
+    new Route("/elephant", "Elephant", "/pages/elephant.html"),
+    new Route("/girafe", "Girafe", "/pages/girafe.html"),
+    new Route("/buffle", "Buffle", "/pages/buffle.html"),
     new Route("/signin", "Connexion", "/pages/auth/signin.html", "/js/auth/signin.js"),
 ];
 

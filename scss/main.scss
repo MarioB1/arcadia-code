@@ -91,4 +91,57 @@ text-justify{
     }
     
     
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body, html {
+        height: 100%;
+        font-family: Arial, sans-serif;
+    }
+    
+    .contact-page {
+        display: flex;
+        height: 100vh;
+        background: url('background-image.jpg') no-repeat center center/cover; /* Remplacez par votre image */
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    
+    .contact-form {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+    }
+    
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
     

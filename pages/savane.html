@@ -21,10 +21,12 @@
 
                 <img src="../images/habitat savane 2.png" class="w-100" style="  width: 800px;
             height: 350px; " />
-<div class="action-image-buttons" data-show="admin">
-    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
-    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
-</div>
+                <div class="action-image-buttons" data-show="admin">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                        data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                        data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
                 <br><br><br>
                 <article>
                     <div class="container pt-4">
@@ -47,21 +49,29 @@
                                             <div class="image-card text-white">
                                                 <img src="../images/zebre savane.png" class="rounded w-100" style="  width: 300px;
                 height: 250px; " />
+                                                              <a href="/zebre"
+
                                                 <p class="titre-image">Zèbre - Tiko</p>
+                                            </a>
                                             </div>
                                         </div>
                                         <div class="col p-3">
                                             <div class="image-card text-white">
+                                                
                                                 <img src="../images/animal savane lion.png" class="rounded w-100" style="  width: 300px;
                 height: 250px; " />
-                                                <p class="titre-image">Lion - Alphonse</p>
+                                              <a href="/lion"
+                                                <p class="titre-image">Lion - Alphonse</p>   
+                                            </a>
                                             </div>
                                         </div>
                                         <div class="col p-3">
                                             <div class="image-card text-white">
                                                 <img src="../images/Hippopotame savane.png" class="rounded w-100" style="  width: 300px;
                 height: 250px; " />
-                                                <p class="titre-image">Hippopotame - Maggie</p>
+                <a href="/elephant"
+
+                                                <p class="titre-image">Hippopotame - Maggie</p></a>
                                             </div>
                                         </div>
                                         <div class="col p-3">
@@ -69,7 +79,9 @@
                                             <div class="image-card text-white">
                                                 <img src="../images/Girafe Savane.png" class="rounded w-100" style="  width: 300px;
                 height: 250px; " />
-                                                <p class="titre-image">Girafe - Iva</p>
+                                                                              <a href="/girafe"
+
+                                                <p class="titre-image">Girafe - Iva</p></a>
                                             </div>
                                         </div>
                                         <div class="col p-3">
@@ -77,7 +89,9 @@
                                                 <img src="../images/animal savane éléphant.png" class="rounded w-100"
                                                     style="  width: 300px;
                 height: 250px; " />
-                                                <p class="titre-image">Elephant - Pierre</p>
+                                                                              <a href="/elephant"
+
+                                                <p class="titre-image">Elephant - Pierre</p></a>
                                             </div>
                                         </div>
                                         <div class="col p-3">
@@ -85,7 +99,9 @@
                                                 <img src="../images/Le buffle d’Afrique savane.png"
                                                     class="rounded w-100" style="  width: 300px;
                 height: 250px; " />
-                                                <p class="titre-image">Buffle d’Afrique - Baki</p>
+                                                                              <a href="/buffle"
+
+                                                <p class="titre-image">Buffle d’Afrique - Baki</p></a>
                                             </div>
                                         </div>
                                     </div>
@@ -98,59 +114,62 @@
                     </div>
                 </article>
             </section>
-            
-    <!-- Modal edition-->
-    <div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title fs-5" id="EditionPhotolLabel">Edition habitat</h2>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                <div class="mb-3">
-                    <label for="NameServiceInput" class="form-label">Titre</label>
-                    <input type="text" class="form-control" id="NameServiceInput"
+
+            <!-- Modal edition-->
+            <div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5" id="EditionPhotolLabel">Edition habitat</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="NameServiceInput" class="form-label">Titre</label>
+                                    <input type="text" class="form-control" id="NameServiceInput" </div>
+                                    <div class="mb-3">
+                                        <label for="PhotoInput" class="form-label">Image</label>
+                                        <input type="file" class="form-control" id="ImageInput">
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-secondary">Enregistrer</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="PhotoInput" class="form-label">Image</label>
-                    <input type="file" class="form-control" id="ImageInput">
-                </div>
-      
-                <div class="text-center">
-                    <button type="button" class="btn btn-secondary">Enregistrer</button>
-                </div>
-            </form>
             </div>
-            </div>
-          </div>
         </div>
-      </div>
-      
-      <!-- Modal suppression-->
-      <div class="modal fade" id="DeletePhotoModal" tabindex="-1" aria-labelledby="DeletePhotoModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title fs-5" id="DeletePhotoModalLabel">Etes-vous sur de vouloir supprimer cet habitat</h2>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"</button>
-            </div>
-            <div class="modal-body">
-                <form>
-                <div class="mb-3">
-                    <p>Titre</p>
-                    <img src="../images/jungle essaie2.png" class="rounded w-100">
+
+        <!-- Modal suppression-->
+        <div class="modal fade" id="DeletePhotoModal" tabindex="-1" aria-labelledby="DeletePhotoModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="DeletePhotoModalLabel">Etes-vous sur de vouloir supprimer cet
+                            habitat</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <p>Titre</p>
+                                <img src="../images/jungle essaie2.png" class="rounded w-100">
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-danger">Supprimer</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
-                <div class="text-center">
-                    <button type="button" class="btn btn-danger">Supprimer</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-      
-                </div>
-            </form>
             </div>
-      
-          </div>
         </div>
-      </div>
-      </div></div>
+        </div>
+        </div>
