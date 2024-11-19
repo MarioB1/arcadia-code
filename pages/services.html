@@ -1,19 +1,18 @@
-<img class="w-100" ; height="650" src="../images/page services animal leopard essaie 2.png" id="imageservices" />
+<img class="w-100" src="../images/page services animal leopard essaie 2.png" id="imageservices" />
 
 
-<section>
-    <article>
+
         <div class="container">
 
             <br><br><br>
             <!-- w-100 tout l'ecran -->
             <div class="text-center pt-4">
+
                 <div class="position-relative">
-                    <div
-                        class="btn text-secondary position-absolute d-flex align-items-center justify-content-center"
+                    <div class="btn text-secondary position-absolute d-flex align-items-center justify-content-center"
                         style="background-color:#014421; left:-20px; right:-20px; height:70px;">
                         <h3 class="fw-bold align-middle">Nos services</h3>
-                   </div>
+                    </div>
                 </div>
 
             </div>
@@ -22,7 +21,11 @@
 
             <div class="container pt-4">
 
+                <div class="text-center">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">Ajouter un service</button>
+                </div>
                 <br>
+
                 <div class="row row-cols-1 row-cols-lg-3">
                     <div class="col p-3">
 
@@ -30,7 +33,12 @@
                             <img src="../images/image visite train.png" class="rounded w-100" style="  width: 300px;
           height: 250px; " />
                             <p class="titre-image">Visite en petit train</p>
+                            <div class="action-image-buttons" data-show="admin" data-show="employe">
+                                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                            </div>
                         </div>
+
                         <br><br>
                         <div class=" text-center" <p>Vous pouvez choisir de visiter le zoo
                             en petit train afin de découvir l’ensemble de notre parc.
@@ -39,13 +47,17 @@
                             <br><br><br><br><br><br>
 
                             Horaires : 10h30 - 16h </p>
-                        </div>
-                    </div>
+                </div>
+        </div>
                     <div class="col p-3">
                         <div class="image-card text-white">
                             <img src="../images/restaurant.png" class="rounded w-100" style="  width: 300px;
           height: 250px; " />
                             <p class="titre-image">Restaurant</p>
+                            <div class="action-image-buttons" data-show="admin" data-show="employe">
+                                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                            </div>
                         </div>
                         <br><br>
                         <div class=" text-center" <p>Près de l’air dédié aux oiseaux de la jungle, le restaurant Gaia
@@ -62,6 +74,10 @@
                             <img src="../images/visite guidée.png" class="rounded w-100" style="  width: 300px;
           height: 250px; " />
                             <p class="titre-image">Visite guidée</p>
+                            <div class="action-image-buttons" data-show="admin" data-show="employe">
+                                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                            </div>
                         </div>
                         <br><br>
                         <div class=" text-justify" <p>Dans des conditions privilégiées, immergez-vous au coeur de la
@@ -74,8 +90,59 @@
                         </div>
                     </div>
                 </div>
+            </div>
+<!-- Modal edition-->
+<div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="EditionPhotolLabel">Edition Service</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <label for="NameServiceInput" class="form-label">Titre</label>
+                <input type="text" class="form-control" id="NameServiceInput"
+            </div>
+            <div class="mb-3">
+                <label for="PhotoInput" class="form-label">Image</label>
+                <input type="file" class="form-control" id="ImageInput">
+            </div>
 
+            <div class="text-center">
+                <button type="button" class="btn btn-secondary">Enregistrer</button>
+            </div>
+        </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal suppression-->
+  <div class="modal fade" id="DeletePhotoModal" tabindex="-1" aria-labelledby="DeletePhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="DeletePhotoModalLabel">Etes-vous sur de vouloir supprimer ce service</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"</button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <p>Titre</p>
+                <img src="../images/restaurant.png" class="rounded w-100">
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-danger">Supprimer</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
 
             </div>
-    </article>
-</section>
+        </form>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+</div></div>

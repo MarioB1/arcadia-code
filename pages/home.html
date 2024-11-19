@@ -55,7 +55,8 @@
       <div class=" text-center" <p> Arcadia vous propose divers services afin de vous immerger dans son environnement et
         de vous faire vivre une expérience unique.
         </p>
-
+        <div class="text-center">
+      
         <br>
         <div class="row row-cols-1 row-cols-lg-3">
           <div class="col p-3">
@@ -64,22 +65,21 @@
               <img src="../images/image visite train.png" class="rounded w-100" style="  width: 300px;
           height: 250px; " />
               <p class="titre-image">Visite en petit train</p>
-            </div>
-          </div>
+            
+        </div></div>
           <div class="col p-3">
             <div class="image-card text-white">
               <img src="../images/restaurant.png" class="rounded w-100" style="  width: 300px;
           height: 250px; " />
-              <p class="titre-image">Restaurant</p>
-            </div>
-          </div>
+      
+    </div></div>
           <div class="col p-3">
             <div class="image-card text-white">
               <img src="../images/visite guidée.png" class="rounded w-100" style="  width: 300px;
           height: 250px; " />
               <p class="titre-image">Visite guidée</p>
-            </div>
-          </div>
+              
+        </div></div>
         </div>
 
       </div>
@@ -116,7 +116,9 @@
           ont été fidèlement recréés
           pour être au plus proche de leur écosystème naturel.
           </p>
-
+<div class="text-center">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">Ajouter un habitat</button>
+      </div>
           <br>
           <div class="row row-cols-1 row-cols-lg-3">
             <div class="col p-3">
@@ -125,6 +127,7 @@
                 <img src="../images/habitat savane 2.png" class="rounded w-100" style="  width: 300px;
           height: 250px; " />
                 <p class="titre-image">Savane</p>
+                
               </div>
             </div>
             <div class="col p-3">
@@ -132,6 +135,7 @@
                 <img src="../images/habitat marais.png" class="rounded w-100" style="  width: 300px;
           height: 250px; " />
                 <p class="titre-image">Marais</p>
+                
               </div>
             </div>
             <div class="col p-3">
@@ -139,6 +143,7 @@
                 <img src="../images/habitat jungle.png" class="rounded w-100" style="  width: 300px;
           height: 250px; " />
                 <p class="titre-image">Jungle</p>
+               
               </div>
             </div>
           </div>
@@ -177,44 +182,38 @@
               <div class="col p-3">
 
                 <div class="image-card text-white">
-                  <img src="../images/animal savane lion.png" class="rounded w-100" style="  width: 300px;
-          height: 250px; " />
+                  <img src="../images/animal savane lion.png" class="rounded w-100"/>
                   <p class="titre-image">Lion - Habitat savane</p>
                 </div>
               </div>
               <div class="col p-3">
                 <div class="image-card text-white">
-                  <img src="../images/animal jungle maki lémurien.png" class="rounded w-100" style="  width: 300px;
-          height: 250px; " />
+                  <img src="../images/animal jungle maki lémurien.png" class="rounded w-100"/>
                   <p class="titre-image">Maki Macaco - Habitat savane</p>
                 </div>
               </div>
               <div class="col p-3">
                 <div class="image-card text-white">
-                  <img src="../images/animal marais chat .png" class="rounded w-100" style="  width: 300px;
-          height: 250px; " />
+                  <img src="../images/animal marais chat .png" class="rounded w-100"/>
                   <p class="titre-image">chaus - Habitat marais</p>
                 </div>
               </div>
               <div class="col p-3">
 
                 <div class="image-card text-white">
-                  <img src="../images/animal marais aligator.png" class="rounded w-100" style="  width: 300px;
-          height: 250px; " />
+                  <img src="../images/animal marais aligator.png" class="rounded w-100"/>
                   <p class="titre-image">Alligator - Habitat marais</p>
                 </div>
               </div>
               <div class="col p-3">
                 <div class="image-card text-white">
-                  <img src="../images/animal savane éléphant.png" class="rounded w-100" style="  width: 300px;
-          height: 250px; " />
+                  <img src="../images/animal savane éléphant.png" class="rounded w-100"/>
                   <p class="titre-image">Elephant - Habitat savane</p>
                 </div>
               </div>
               <div class="col p-3">
                 <div class="image-card text-white">
-                  <img src="../images/gorille jungle.png" class="rounded w-100" style="  width: 300px;
-          height: 250px; " />
+                  <img src="../images/gorille jungle.png" class="rounded w-100"/>
                   <p class="titre-image">Gorille - Habitat savane</p>
                 </div>
               </div>
@@ -255,15 +254,30 @@
 
 
         <div class="container">
-            <div id="avisList">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Page avec Scrollbar</title>
+            <style>
+                .scroll-container {
+                    width: 300px;
+                    height: 200px;
+                    overflow: auto;
+                    border: 1px solid #ccc;
+                }
+            </style>
+        </head>
+        <body>
+          <div class="scroll-container">
+            
               <div class="card my-2">
                 <div class="card-header d-flex">
                   <div class="stars card-title">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
                   </div>
                 </div>
                 <div class="card-body">
@@ -276,11 +290,11 @@
               <div class="card my-2">
                 <div class="card-header d-flex">
                   <div class="stars card-title">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
                   </div>
                 </div>
                 <div class="card-body">
@@ -293,11 +307,11 @@
               <div class="card my-2">
                 <div class="card-header d-flex">
                   <div class="stars card-title">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
                   </div>
                 </div>
                 <div class="card-body">
@@ -311,11 +325,11 @@
               <div class="card my-2">
                 <div class="card-header d-flex">
                   <div class="stars card-title">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
                   </div>
                 </div>
                 <div class="card-body">
@@ -328,11 +342,11 @@
               <div class="card my-2">
                 <div class="card-header d-flex">
                   <div class="stars card-title">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
                   </div>
                 </div>
                 <div class="card-body">
@@ -342,57 +356,105 @@
                   </p>
                 </div>
               </div>
-              
+            </div>
+          </body>
             </div></div></section></section></section>
+            <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec Scrollbar</title>
+    <!-- Lien vers le CDN Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Lien vers le CSS de Bootstrap -->
+    
+    <style>
+        /* Style pour la barre de défilement */
+        .scroll-container {
+            width: 100%;       /* Utilise toute la largeur de la fenêtre */
+            height: 500px;     /* Hauteur fixe pour la zone défilable */
+            overflow: auto;    /* Active la barre de défilement */
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
 <br><br><br>
 <section>
-<article class="bg-secondary">
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horaires du Zoo</title>
+    <!-- Lien vers le fichier CSS si nécessaire -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <div class="white d-flex justify-content-center">
-    <h2 class="text-dark">Horaires</h2>
-  </div>
-  <div class="darker d-flex justify-content-center">
-    <div class="table-responsive">
-      <table class="table table-striped" aria-label="horaires du zoo">
-        <br>
-                          <tr>
-            <td>Lundi</td>
-                        <td>09:00</td>
-            <td>18:00</td>
-                      </tr>
-                    <tr>
-            <td>Mardi</td>
-                        <td>09:00</td>
-            <td>18:00</td>
-                      </tr>
-                    <tr>
-            <td>Mercredi</td>
-                        <td>09:00</td>
-            <td>18:00</td>
-                      </tr>
-                    <tr>
-            <td>Jeudi</td>
-                        <td>09:00</td>
-            <td>18:00</td>
-                      </tr>
-                    <tr>
-            <td>Vendredi</td>
-                        <td>10:00</td>
-            <td>20:00</td>
-                      </tr>
-                    <tr>
-            <td>Samedi</td>
-                        <td>10:00</td>
-            <td>20:00</td>
-                      </tr>
-                    <tr>
-            <td>Dimanche</td>
-                        <td>09:00</td>
-            <td>18:00</td>
-                      </tr>
-                        </table>
+<article class="article-bg">
+    <div class="white d-flex justify-content-center">
+        <h2 class="text-dark">Horaires</h2>
     </div>
-  </div>
 
+    <div class="text-center">
+      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">Modifier les horaires</button>
+  </div>
+    <div class="darker d-flex justify-content-center">
+        <div class="table-responsive">
+            <table class="table table-striped" aria-label="horaires du zoo">
+                <br>
+                <tr>
+                    <td>Lundi</td>
+                    <td>09:00</td>
+                    <td>18:00</td>
+                </tr>
+                <tr>
+                    <td>Mardi</td>
+                    <td>09:00</td>
+                    <td>18:00</td>
+                </tr>
+                <tr>
+                    <td>Mercredi</td>
+                    <td>09:00</td>
+                    <td>18:00</td>
+                </tr>
+                <tr>
+                    <td>Jeudi</td>
+                    <td>09:00</td>
+                    <td>18:00</td>
+                </tr>
+                <tr>
+                    <td>Vendredi</td>
+                    <td>10:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Samedi</td>
+                    <td>10:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Dimanche</td>
+                    <td>09:00</td>
+                    <td>18:00</td>
+                </tr>
+            </table>
+            <div class="action-image-buttons">
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+          </div>
+        </div>
+    </div>
 </article>
-</section>
+
+</body>
+</html>
